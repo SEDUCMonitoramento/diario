@@ -1,0 +1,151 @@
+{
+    "title": "Recording 16/05/2025 at 18:06:19",
+    "steps": [
+        {
+            "type": "setViewport",
+            "width": 823,
+            "height": 512,
+            "deviceScaleFactor": 1,
+            "isMobile": false,
+            "hasTouch": false,
+            "isLandscape": false
+        },
+        {
+            "type": "navigate",
+            "url": "https://bertioga.aprova.com.br/inicio",
+            "assertedEvents": [
+                {
+                    "type": "navigation",
+                    "url": "https://bertioga.aprova.com.br/inicio",
+                    "title": "Home - Aprova"
+                }
+            ]
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "div.core-header-logo"
+                ],
+                [
+                    "xpath//html/body/app-root/app-dashboard/div/div[1]/core-header/div/div/div[1]/div[2]"
+                ],
+                [
+                    "pierce/div.core-header-logo"
+                ]
+            ],
+            "offsetY": 18.5,
+            "offsetX": 22
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "div.search-container"
+                ],
+                [
+                    "xpath//html/body/app-root/app-dashboard/div/div[1]/core-header/div/div/div[2]/div[1]/aprova-search-component/div[2]"
+                ],
+                [
+                    "pierce/div.search-container"
+                ]
+            ],
+            "offsetY": 15.5,
+            "offsetX": 70
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "div.core-header-menu-mobile-button use"
+                ],
+                [
+                    "xpath//html/body/app-root/app-dashboard/div/div[1]/core-header/div/div/div[1]/div[1]/aprova-icon/div/svg/use"
+                ],
+                [
+                    "pierce/div.core-header-menu-mobile-button use"
+                ]
+            ],
+            "offsetY": 5.5,
+            "offsetX": 8
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aprova-core-sidebar [data-testid='linkMyInbox'] span"
+                ],
+                [
+                    "xpath///*[@data-testid=\"linkMyInbox\"]/div/span"
+                ],
+                [
+                    "pierce/aprova-core-sidebar [data-testid='linkMyInbox'] span"
+                ]
+            ],
+            "offsetY": 10.5,
+            "offsetX": 41
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "[data-testid='buttonSectorsSelector']"
+                ],
+                [
+                    "xpath///*[@data-testid=\"buttonSectorsSelector\"]"
+                ],
+                [
+                    "pierce/[data-testid='buttonSectorsSelector']"
+                ]
+            ],
+            "offsetY": 29,
+            "offsetX": 26
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/SE-DGTE SE-DGTE DIRETORIA DE GESTÃO DE TECNOLOGIA EDUCACIONAL 708",
+                    "aria/[role=\"paragraph\"]"
+                ],
+                [
+                    "mat-tree-node:nth-of-type(2) p"
+                ],
+                [
+                    "xpath//html/body/app-root/app-dashboard/div/div[2]/div/app-inbox/div[2]/div[1]/mat-tree/mat-tree-node[2]/div[2]/div/p"
+                ],
+                [
+                    "pierce/mat-tree-node:nth-of-type(2) p"
+                ]
+            ],
+            "offsetY": 15,
+            "offsetX": 235.375
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "div:nth-of-type(3) > span"
+                ],
+                [
+                    "xpath//html/body/app-root/app-dashboard/div/div[2]/div/app-inbox/div[5]/div/div[2]/pref-editable-table/div/div/div/div[1]/div[3]/span"
+                ],
+                [
+                    "pierce/div:nth-of-type(3) > span"
+                ],
+                [
+                    "text/COMUNICAÇÃO SE"
+                ]
+            ],
+            "offsetY": 32.5,
+            "offsetX": 48.171875
+        }
+    ]
+}

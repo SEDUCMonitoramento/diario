@@ -1,0 +1,1216 @@
+.
+├── 404.html
+├── 500.html.
+├── app
+│   ├── assets
+│   │   ├── fonts
+│   │   ├── html
+│   │   ├── images
+│   │   ├── javascripts
+│   │   └── stylesheets
+│   ├── channels
+│   │   └── application_cable
+│   ├── controllers
+│   │   ├── absence_justification_report_controller.rb
+│   │   ├── absence_justifications_controller.rb
+│   │   ├── accounts_controller.rb
+│   │   ├── admin_synchronizations_controller.rb
+│   │   ├── api
+│   │   ├── application_controller.rb
+│   │   ├── attendance_record_report_by_students_controller.rb
+│   │   ├── attendance_record_report_controller.rb
+│   │   ├── avaliation_exemptions_controller.rb
+│   │   ├── avaliation_recovery_diary_records_controller.rb
+│   │   ├── avaliation_recovery_lowest_notes_controller.rb
+│   │   ├── avaliations_controller.rb
+│   │   ├── backup_files_controller.rb
+│   │   ├── classrooms_controller.rb
+│   │   ├── complementary_exams_controller.rb
+│   │   ├── complementary_exam_settings_controller.rb
+│   │   ├── conceptual_exams_controller.rb
+│   │   ├── conceptual_exams_in_batchs_controller.rb
+│   │   ├── concerns
+│   │   ├── contents_controller.rb
+│   │   ├── courses_controller.rb
+│   │   ├── current_role_controller.rb
+│   │   ├── custom_rounding_tables_controller.rb
+│   │   ├── daily_frequencies_controller.rb
+│   │   ├── daily_frequencies_in_batchs_controller.rb
+│   │   ├── daily_frequency_students_controller.rb
+│   │   ├── daily_notes_controller.rb
+│   │   ├── daily_note_students_controller.rb
+│   │   ├── dashboard
+│   │   ├── dashboard_controller.rb
+│   │   ├── data_exportations_controller.rb
+│   │   ├── descriptive_exams_controller.rb
+│   │   ├── discipline_content_records_controller.rb
+│   │   ├── discipline_lesson_plan_report_controller.rb
+│   │   ├── discipline_lesson_plans_controller.rb
+│   │   ├── disciplines_controller.rb
+│   │   ├── discipline_teaching_plans_controller.rb
+│   │   ├── entity_configurations_controller.rb
+│   │   ├── exam_record_report_controller.rb
+│   │   ├── exam_rules_controller.rb
+│   │   ├── final_recovery_diary_records_controller.rb
+│   │   ├── general_configurations_controller.rb
+│   │   ├── grades_controller.rb
+│   │   ├── ieducar_api_configurations_controller.rb
+│   │   ├── ieducar_api_exam_postings_controller.rb
+│   │   ├── infrequency_trackings_controller.rb
+│   │   ├── knowledge_area_content_records_controller.rb
+│   │   ├── knowledge_area_lesson_plan_report_controller.rb
+│   │   ├── knowledge_area_lesson_plans_controller.rb
+│   │   ├── knowledge_areas_controller.rb
+│   │   ├── knowledge_area_teaching_plans_controller.rb
+│   │   ├── learning_objectives_and_skills_controller.rb
+│   │   ├── lectures_controller.rb
+│   │   ├── lessons_boards_controller.rb
+│   │   ├── maintenance_adjustments_controller.rb
+│   │   ├── observation_diary_records_controller.rb
+│   │   ├── observation_record_report_controller.rb
+│   │   ├── old_steps_conceptual_values_controller.rb
+│   │   ├── pages_controller.rb
+│   │   ├── partial_score_record_report_controller.rb
+│   │   ├── pedagogical_trackings_controller.rb
+│   │   ├── registrations_controller.rb
+│   │   ├── roles_controller.rb
+│   │   ├── school_calendar_classroom_steps_controller.rb
+│   │   ├── school_calendar_event_batches_controller.rb
+│   │   ├── school_calendar_events_controller.rb
+│   │   ├── school_calendars_controller.rb
+│   │   ├── school_calendar_steps_controller.rb
+│   │   ├── schools_controller.rb
+│   │   ├── school_term_recovery_diary_records_controller.rb
+│   │   ├── school_term_type_steps_controller.rb
+│   │   ├── sidekiq_monitor_controller.rb
+│   │   ├── student_enrollments_controller.rb
+│   │   ├── student_enrollments_lists_controller.rb
+│   │   ├── students_controller.rb
+│   │   ├── synchronizations_controller.rb
+│   │   ├── system_notifications_controller.rb
+│   │   ├── teacher_avaliations_controller.rb
+│   │   ├── teacher_report_cards_controller.rb
+│   │   ├── teachers_controller.rb
+│   │   ├── teaching_plans_controller.rb
+│   │   ├── terms_dictionaries_controller.rb
+│   │   ├── test_settings_controller.rb
+│   │   ├── test_setting_tests_controller.rb
+│   │   ├── transfer_notes_controller.rb
+│   │   ├── translations_controller.rb
+│   │   ├── unities_controller.rb
+│   │   ├── user_roles_controller.rb
+│   │   ├── users
+│   │   └── users_controller.rb
+│   ├── decorators
+│   │   ├── absence_justification_decorator.rb
+│   │   ├── audit_decorator.rb
+│   │   ├── biometric_types_decorator.rb
+│   │   ├── bncc_objectives_and_skills_decorator.rb
+│   │   ├── complementary_exam_setting_decorator.rb
+│   │   ├── conceptual_exam_value_decorator.rb
+│   │   ├── content_record_decorator.rb
+│   │   ├── custom_rounding_table_decorator.rb
+│   │   ├── discipline_content_record_decorator.rb
+│   │   ├── hash_decorator.rb
+│   │   ├── ieducar_response_decorator.rb
+│   │   ├── infrequency_tracking_decorator.rb
+│   │   ├── knowledge_area_content_record_decorator.rb
+│   │   ├── learning_objectives_and_skill_decorator.rb
+│   │   ├── lesson_plan_decorator.rb
+│   │   ├── maintenance_adjustment_decorator.rb
+│   │   ├── observation_diary_record_decorator.rb
+│   │   ├── periods_decorator.rb
+│   │   ├── rounded_avaliations_decorator.rb
+│   │   ├── school_calendar_decorator.rb
+│   │   ├── student_decorator.rb
+│   │   ├── student_in_final_recovery_decorator.rb
+│   │   ├── teaching_plan_decorator.rb
+│   │   ├── test_setting_decorator.rb
+│   │   ├── unity_decorator.rb
+│   │   ├── user_decorator.rb
+│   │   └── weekdays_decorator.rb
+│   ├── enumerations
+│   │   ├── absence_justification_authors.rb
+│   │   ├── access_level.rb
+│   │   ├── active_search_status.rb
+│   │   ├── adult_and_youth_educations.rb
+│   │   ├── affected_score_types.rb
+│   │   ├── after_sale_relationship_options.rb
+│   │   ├── api_posting_status.rb
+│   │   ├── api_posting_types.rb
+│   │   ├── api_synchronization_status.rb
+│   │   ├── audited_action.rb
+│   │   ├── average_calculation_types.rb
+│   │   ├── backup_status.rb
+│   │   ├── backup_types.rb
+│   │   ├── batch_status.rb
+│   │   ├── biometric_types.rb
+│   │   ├── bncc_disciplines.rb
+│   │   ├── bncc_experience_fields.rb
+│   │   ├── bncc_steps.rb
+│   │   ├── calculation_types.rb
+│   │   ├── child_educations.rb
+│   │   ├── comparative_operators.rb
+│   │   ├── conceptual_exam_status.rb
+│   │   ├── content_record_report_types.rb
+│   │   ├── daily_note_statuses.rb
+│   │   ├── elementary_educations.rb
+│   │   ├── event_coverage_type.rb
+│   │   ├── event_types.rb
+│   │   ├── exam_setting_types.rb
+│   │   ├── features.rb
+│   │   ├── frequency_types.rb
+│   │   ├── group_child_educations.rb
+│   │   ├── ieducar_boolean_state.rb
+│   │   ├── ieducar_error_messages.rb
+│   │   ├── infrequency_tracking_types.rb
+│   │   ├── kinds.rb
+│   │   ├── maintenance_adjustment_kinds.rb
+│   │   ├── maintenance_adjustment_status.rb
+│   │   ├── move_types.rb
+│   │   ├── notice_types.rb
+│   │   ├── opinion_types.rb
+│   │   ├── origin_types.rb
+│   │   ├── parallel_exams_calculation_types.rb
+│   │   ├── periods.rb
+│   │   ├── permissions.rb
+│   │   ├── permissions_yes_or_no.rb
+│   │   ├── plans_authors.rb
+│   │   ├── profile_roles.rb
+│   │   ├── recovery_types.rb
+│   │   ├── request_methods.rb
+│   │   ├── require_daily_activities_record_types.rb
+│   │   ├── role_kind.rb
+│   │   ├── rounded_avaliations.rb
+│   │   ├── rounding_table_action.rb
+│   │   ├── score_types.rb
+│   │   ├── security_levels.rb
+│   │   ├── sexs.rb
+│   │   ├── sidekiq_status.rb
+│   │   ├── states.rb
+│   │   ├── step_types.rb
+│   │   ├── student_enrollment_score_type_filters.rb
+│   │   ├── student_enrollment_status.rb
+│   │   ├── teacher_report_card_status.rb
+│   │   ├── translation_groups.rb
+│   │   ├── translation_subgroups.rb
+│   │   ├── types_of_teaching.rb
+│   │   ├── unit_types.rb
+│   │   ├── user_status.rb
+│   │   ├── workdays.rb
+│   │   └── year.rb
+│   ├── forms
+│   │   ├── absence_justification_report_form.rb
+│   │   ├── attendance_record_report_by_student_form.rb
+│   │   ├── attendance_record_report_form.rb
+│   │   ├── avaliation_multiple_creator_classroom_form.rb
+│   │   ├── avaliation_multiple_creator_form.rb
+│   │   ├── copy_discipline_teaching_plan_form.rb
+│   │   ├── copy_knowledge_area_teaching_plan_form.rb
+│   │   ├── current_role_form.rb
+│   │   ├── discipline_content_record_cloner_form.rb
+│   │   ├── discipline_content_record_item_cloner_form.rb
+│   │   ├── discipline_lesson_plan_cloner_form.rb
+│   │   ├── discipline_lesson_plan_item_cloner_form.rb
+│   │   ├── discipline_lesson_plan_report_form.rb
+│   │   ├── exam_record_report_form.rb
+│   │   ├── frequency_in_batch_form.rb
+│   │   ├── knowledge_area_content_record_cloner_form.rb
+│   │   ├── knowledge_area_content_record_item_cloner_form.rb
+│   │   ├── knowledge_area_lesson_plan_cloner_form.rb
+│   │   ├── knowledge_area_lesson_plan_item_cloner_form.rb
+│   │   ├── knowledge_area_lesson_plan_report_form.rb
+│   │   ├── observation_record_report_form.rb
+│   │   ├── partial_score_record_report_form.rb
+│   │   └── teacher_report_card_form.rb
+│   ├── helpers
+│   │   ├── absence_justification_helper.rb
+│   │   ├── absence_justification_report_helper.rb
+│   │   ├── application_helper.rb
+│   │   ├── avaliation_helper.rb
+│   │   ├── bootstrap_flash_helper.rb
+│   │   ├── complementary_exam_setting_helper.rb
+│   │   ├── conceptual_exam_helper.rb
+│   │   ├── conceptual_exam_value_helper.rb
+│   │   ├── content_record_helper.rb
+│   │   ├── daily_frequencies_in_batchs_helper.rb
+│   │   ├── daily_frequency_helper.rb
+│   │   ├── daily_note_helper.rb
+│   │   ├── dashboard_helper.rb
+│   │   ├── data_exportations_helper.rb
+│   │   ├── lesson_plan_helper.rb
+│   │   ├── pedagogical_trackings_helper.rb
+│   │   ├── role_helper.rb
+│   │   ├── school_calendar_event_batch_helper.rb
+│   │   ├── teaching_plan_helper.rb
+│   │   ├── test_setting_helper.rb
+│   │   └── user_helper.rb
+│   ├── inputs
+│   │   ├── select2_classroom_input.rb
+│   │   ├── select2_course_input.rb
+│   │   ├── select2_discipline_input.rb
+│   │   ├── select2_grade_input.rb
+│   │   ├── select2_input.rb
+│   │   ├── select2_period_input.rb
+│   │   ├── select2_plans_input.rb
+│   │   ├── select2_remote_input.rb
+│   │   ├── select2_step_input.rb
+│   │   └── select2_unity_input.rb
+│   ├── javascript
+│   │   ├── components
+│   │   └── packs
+│   ├── jobs
+│   │   └── application_job.rb
+│   ├── mailers
+│   │   ├── application_mailer.rb
+│   │   ├── base_mailer.rb
+│   │   ├── receipt_mailer.rb
+│   │   └── user_mailer.rb
+│   ├── models
+│   │   ├── absence_justification_attachment.rb
+│   │   ├── absence_justification.rb
+│   │   ├── absence_justifications_discipline.rb
+│   │   ├── absence_justifications_student.rb
+│   │   ├── active_search_daily_note_student.rb
+│   │   ├── active_search_frequency_student.rb
+│   │   ├── active_search.rb
+│   │   ├── address.rb
+│   │   ├── admin_synchronization.rb
+│   │   ├── application_record.rb
+│   │   ├── avaliation_exemption.rb
+│   │   ├── avaliation.rb
+│   │   ├── avaliation_recovery_diary_record.rb
+│   │   ├── avaliation_recovery_lowest_note.rb
+│   │   ├── classroom.rb
+│   │   ├── classrooms_grade.rb
+│   │   ├── complementary_exam.rb
+│   │   ├── complementary_exam_setting.rb
+│   │   ├── complementary_exam_student.rb
+│   │   ├── conceptual_exam.rb
+│   │   ├── conceptual_exam_value.rb
+│   │   ├── concerns
+│   │   ├── content.rb
+│   │   ├── content_record.rb
+│   │   ├── content_records_content.rb
+│   │   ├── contents_lesson_plan.rb
+│   │   ├── contents_teaching_plan.rb
+│   │   ├── course.rb
+│   │   ├── custom_rounding_table.rb
+│   │   ├── custom_rounding_table_value.rb
+│   │   ├── daily_frequency.rb
+│   │   ├── daily_frequency_student.rb
+│   │   ├── daily_note.rb
+│   │   ├── daily_note_status.rb
+│   │   ├── daily_note_student.rb
+│   │   ├── data_exportation.rb
+│   │   ├── deficiency.rb
+│   │   ├── deficiency_student.rb
+│   │   ├── descriptive_exam.rb
+│   │   ├── descriptive_exam_student.rb
+│   │   ├── discipline_content_record.rb
+│   │   ├── discipline_lesson_plan.rb
+│   │   ├── discipline.rb
+│   │   ├── discipline_teaching_plan.rb
+│   │   ├── entity_configuration.rb
+│   │   ├── entity.rb
+│   │   ├── exam_rule.rb
+│   │   ├── exempted_daily_frequency_student.rb
+│   │   ├── exempted_daily_note_student.rb
+│   │   ├── final_recovery_diary_record.rb
+│   │   ├── general_configuration.rb
+│   │   ├── grade.rb
+│   │   ├── grouped_discipline.rb
+│   │   ├── grouped_teacher_discipline_classrooms.rb
+│   │   ├── ieducar_api_configuration.rb
+│   │   ├── ieducar_api_exam_posting.rb
+│   │   ├── ieducar_api_synchronization.rb
+│   │   ├── infrequency_tracking.rb
+│   │   ├── knowledge_area_content_record.rb
+│   │   ├── knowledge_area_lesson_plan_knowledge_area.rb
+│   │   ├── knowledge_area_lesson_plan.rb
+│   │   ├── knowledge_area.rb
+│   │   ├── knowledge_area_teaching_plan_knowledge_area.rb
+│   │   ├── knowledge_area_teaching_plan.rb
+│   │   ├── label.rb
+│   │   ├── learning_objectives_and_skill.rb
+│   │   ├── lecture.rb
+│   │   ├── lesson_plan_attachment.rb
+│   │   ├── lesson_plan.rb
+│   │   ├── lessons_board_lesson.rb
+│   │   ├── lessons_board_lesson_weekday.rb
+│   │   ├── lessons_board.rb
+│   │   ├── maintenance_adjustment.rb
+│   │   ├── mvw_content_record_by_school_classroom_teacher.rb
+│   │   ├── mvw_frequency_by_school_classroom_teacher.rb
+│   │   ├── mvw_infrequency_tracking_classroom.rb
+│   │   ├── mvw_infrequency_tracking_student.rb
+│   │   ├── notice.rb
+│   │   ├── null_daily_frequency_student.rb
+│   │   ├── null_daily_note_student.rb
+│   │   ├── null_user_role.rb
+│   │   ├── objective.rb
+│   │   ├── objectives_lesson_plan.rb
+│   │   ├── objectives_teaching_plan.rb
+│   │   ├── observation_diary_record_attachment.rb
+│   │   ├── observation_diary_record_note.rb
+│   │   ├── observation_diary_record_note_student.rb
+│   │   ├── observation_diary_record.rb
+│   │   ├── profile.rb
+│   │   ├── recovery_diary_record.rb
+│   │   ├── recovery_diary_record_student.rb
+│   │   ├── recovery_exam_rule.rb
+│   │   ├── remote_grade.rb
+│   │   ├── role_permission.rb
+│   │   ├── role.rb
+│   │   ├── rounding_table.rb
+│   │   ├── rounding_table_value.rb
+│   │   ├── school_calendar_classroom.rb
+│   │   ├── school_calendar_classroom_step.rb
+│   │   ├── school_calendar_discipline_grade.rb
+│   │   ├── school_calendar_event_batch.rb
+│   │   ├── school_calendar_event.rb
+│   │   ├── school_calendar.rb
+│   │   ├── school_calendar_step.rb
+│   │   ├── school_class.rb
+│   │   ├── school_term_recovery_diary_record.rb
+│   │   ├── school_term_type.rb
+│   │   ├── school_term_type_step.rb
+│   │   ├── signup.rb
+│   │   ├── specific_step.rb
+│   │   ├── student_enrollment_classroom.rb
+│   │   ├── student_enrollment_dependence.rb
+│   │   ├── student_enrollment_exempted_discipline.rb
+│   │   ├── student_enrollment.rb
+│   │   ├── student.rb
+│   │   ├── student_unification.rb
+│   │   ├── student_unification_student.rb
+│   │   ├── system_notification.rb
+│   │   ├── system_notification_target.rb
+│   │   ├── teacher_discipline_classroom.rb
+│   │   ├── teacher.rb
+│   │   ├── teacher_unification.rb
+│   │   ├── teacher_unification_teacher.rb
+│   │   ├── teaching_plan_attachment.rb
+│   │   ├── teaching_plan.rb
+│   │   ├── terms_dictionary.rb
+│   │   ├── test_setting.rb
+│   │   ├── test_setting_test.rb
+│   │   ├── transfer_note.rb
+│   │   ├── translation.rb
+│   │   ├── unique_daily_frequency_student.rb
+│   │   ├── unity_equipment.rb
+│   │   ├── unity.rb
+│   │   ├── unity_school_day.rb
+│   │   ├── user_login.rb
+│   │   ├── user.rb
+│   │   ├── user_role.rb
+│   │   ├── worker_batch.rb
+│   │   └── worker_state.rb
+│   ├── policies
+│   │   ├── application_policy.rb
+│   │   ├── avaliation_policy.rb
+│   │   ├── content_policy.rb
+│   │   ├── daily_frequency_policy.rb
+│   │   ├── descriptive_exam_policy.rb
+│   │   ├── ieducar_api_configuration_policy.rb
+│   │   ├── lessons_board_policy.rb
+│   │   ├── school_calendar_policy.rb
+│   │   ├── teaching_plan_policy.rb
+│   │   ├── test_setting_update_policy.rb
+│   │   └── user_policy.rb
+│   ├── presenters
+│   │   ├── base_presenter.rb
+│   │   ├── daily_note_student_presenter.rb
+│   │   ├── descriptive_exam_student_presenter.rb
+│   │   └── recovery_diary_record_student_presenter.rb
+│   ├── queries
+│   │   ├── daily_frequency_query.rb
+│   │   ├── observation_record_report_query.rb
+│   │   ├── parent_dashboard_students_query.rb
+│   │   ├── school_calendar_classroom_query.rb
+│   │   ├── school_calendar_query.rb
+│   │   ├── student_avaliation_exemption_query.rb
+│   │   └── student_notes_query.rb
+│   ├── reports
+│   │   ├── absence_justification_report.rb
+│   │   ├── attendance_record_report_by_student.rb
+│   │   ├── attendance_record_report.rb
+│   │   ├── base_report_old.rb
+│   │   ├── base_report.rb
+│   │   ├── discipline_content_record_report.rb
+│   │   ├── discipline_lesson_plan_pdf.rb
+│   │   ├── discipline_lesson_plan_report.rb
+│   │   ├── discipline_teaching_plan_pdf.rb
+│   │   ├── exam_record_report.rb
+│   │   ├── knowledge_area_content_record_report.rb
+│   │   ├── knowledge_area_lesson_plan_pdf.rb
+│   │   ├── knowledge_area_lesson_plan_report.rb
+│   │   ├── knowledge_area_teaching_plan_pdf.rb
+│   │   ├── observation_record_report.rb
+│   │   ├── partial_score_record_report.rb
+│   │   └── teacher_report_card.rb
+│   ├── seeders
+│   │   └── school_calendar_events_seeder.rb
+│   ├── serializers
+│   │   ├── avaliation_serializer.rb
+│   │   ├── complementary_exam_setting_serializer.rb
+│   │   ├── content_serializer.rb
+│   │   ├── daily_frequency_serializer.rb
+│   │   ├── daily_frequency_student_serializer.rb
+│   │   ├── daily_note_student_serializer.rb
+│   │   ├── exam_rule_serializer.rb
+│   │   ├── rounding_table_serializer.rb
+│   │   ├── rounding_table_value_serializer.rb
+│   │   ├── school_calendar_step_serializer.rb
+│   │   ├── select2_teachers_serializer.rb
+│   │   ├── student_enrollment_serializer.rb
+│   │   ├── student_enrollments_lists_serializer.rb
+│   │   ├── student_in_final_recovery_serializer.rb
+│   │   ├── student_in_recovery_serializer.rb
+│   │   ├── student_lowest_note_serializer.rb
+│   │   ├── student_serializer.rb
+│   │   ├── system_notification_serializer.rb
+│   │   ├── test_setting_serializer.rb
+│   │   └── user_role_serializer.rb
+│   ├── services
+│   │   ├── absence_adjustments_service.rb
+│   │   ├── absence_count_service.rb
+│   │   ├── absence_justification_author_fetcher.rb
+│   │   ├── absence_justified_on_date.rb
+│   │   ├── active_search_service.rb
+│   │   ├── active_students_on_date.rb
+│   │   ├── admin_user_creator.rb
+│   │   ├── api
+│   │   ├── avaliations_school_calendar_updater.rb
+│   │   ├── avaliations_test_setting_updater.rb
+│   │   ├── aws_s3_handler_service.rb
+│   │   ├── backup_file
+│   │   ├── backup_file.rb
+│   │   ├── block_user_service.rb
+│   │   ├── check_type_frequency_by_discipline_service.rb
+│   │   ├── complementary_exam_calculator.rb
+│   │   ├── complementary_exam_settings_fetcher.rb
+│   │   ├── conceptual_exams_in_batchs
+│   │   ├── conceptual_exam_value_creator.rb
+│   │   ├── contents_for_discipline_record_fetcher.rb
+│   │   ├── contents_for_knowledge_area_record_fetcher.rb
+│   │   ├── contents_record_fetcher.rb
+│   │   ├── content_tag_converter.rb
+│   │   ├── copy_discipline_teaching_plan_service.rb
+│   │   ├── create_absence_justifications_service.rb
+│   │   ├── create_multiple_contents.rb
+│   │   ├── current_profile.rb
+│   │   ├── current_school_calendar_fetcher.rb
+│   │   ├── current_school_year_fetcher.rb
+│   │   ├── daily_frequencies_creator.rb
+│   │   ├── daily_frequency_attributes_normalizer.rb
+│   │   ├── date_param_validator.rb
+│   │   ├── delete_dispensed_exams_and_frequencies_service.rb
+│   │   ├── delete_invalid_presence_record_service.rb
+│   │   ├── discipline_teachers_fetcher.rb
+│   │   ├── discipline_teaching_plan_contents_fetcher.rb
+│   │   ├── discipline_teaching_plan_objectives_fetcher.rb
+│   │   ├── enrollment_from_student_fetcher.rb
+│   │   ├── entity_creator.rb
+│   │   ├── entity_database_creator.rb
+│   │   ├── entity_status_manager.rb
+│   │   ├── exam_poster
+│   │   ├── exam_rule_fetcher.rb
+│   │   ├── exempted_disciplines_in_step.rb
+│   │   ├── features_access_levels.rb
+│   │   ├── frequency_type_definer.rb
+│   │   ├── ieducar_api
+│   │   ├── ieducar_api.rb
+│   │   ├── ieducar_avatar_auth.rb
+│   │   ├── ieducar_synchronizers
+│   │   ├── infrequency_tracking_notifier.rb
+│   │   ├── knowledge_area_teaching_plan_contents_fetcher.rb
+│   │   ├── knowledge_area_teaching_plan_objectives_fetcher.rb
+│   │   ├── lesson_boards_fetcher.rb
+│   │   ├── lesson_boards_service.rb
+│   │   ├── lesson_plan_attachment_copier.rb
+│   │   ├── list_grades_by_step_builder.rb
+│   │   ├── maximum_score_fetcher.rb
+│   │   ├── minimum_score_fetcher.rb
+│   │   ├── navigation
+│   │   ├── navigation.rb
+│   │   ├── objectives_to_content_fetcher.rb
+│   │   ├── old_steps_conceptual_values_fetcher.rb
+│   │   ├── pedagogical_tracking_calculator.rb
+│   │   ├── period_updater_service.rb
+│   │   ├── plan_author_fetcher.rb
+│   │   ├── posting_date_checker.rb
+│   │   ├── recovery_steps_fetcher.rb
+│   │   ├── remove_daily_note_students.rb
+│   │   ├── report_generator.rb
+│   │   ├── reset_password_service.rb
+│   │   ├── resource_destroyer.rb
+│   │   ├── school_calendar_event_days.rb
+│   │   ├── school_calender_event_service.rb
+│   │   ├── school_day_checker.rb
+│   │   ├── school_days_counter_service.rb
+│   │   ├── school_term_average_calculator.rb
+│   │   ├── score_rounder.rb
+│   │   ├── smart_enqueuer.rb
+│   │   ├── steps_fetcher.rb
+│   │   ├── student_average_calculator.rb
+│   │   ├── student_dependencies_discarder.rb
+│   │   ├── student_enrollment_classroom_businesses.rb
+│   │   ├── student_enrollment_classroom_fetcher.rb
+│   │   ├── student_enrollment_classrooms_retriever.rb
+│   │   ├── student_enrollments_list.rb
+│   │   ├── student_enrollments_retriever.rb
+│   │   ├── student_in_final_recovery_fetcher.rb
+│   │   ├── student_notes_in_step_fetcher.rb
+│   │   ├── student_partial_scores_fetcher.rb
+│   │   ├── student_recovery_average_calculator.rb
+│   │   ├── students_exempt_from_discipline.rb
+│   │   ├── students_in_dependency.rb
+│   │   ├── students_in_final_recovery_fetcher.rb
+│   │   ├── students_in_recovery_fetcher.rb
+│   │   ├── student_unification
+│   │   ├── system_notification_creator.rb
+│   │   ├── system_notification_router.rb
+│   │   ├── teacher_classroom_and_discipline_fetcher.rb
+│   │   ├── teacher_next_avaliations_fetcher.rb
+│   │   ├── teacher_pending_avaliations_fetcher.rb
+│   │   ├── teacher_period_fetcher.rb
+│   │   ├── teacher_regent_fetcher.rb
+│   │   ├── teacher_relation_fetcher.rb
+│   │   ├── teacher_unification
+│   │   ├── teacher_work_done_chart_fetcher.rb
+│   │   ├── teaching_plan_contents_fetcher.rb
+│   │   ├── teaching_plan_objectives_fetcher.rb
+│   │   ├── test_setting_fetcher.rb
+│   │   ├── transfer_notes.rb
+│   │   ├── translations_fetcher.rb
+│   │   ├── translator.rb
+│   │   ├── unique_daily_frequency_students_creator.rb
+│   │   ├── unities_classrooms_disciplines_by_teacher.rb
+│   │   ├── uploads_storage.rb
+│   │   ├── user_by_csv_creator.rb
+│   │   ├── user_discriminator_service.rb
+│   │   ├── user_for_student_creator.rb
+│   │   ├── user_updater.rb
+│   │   ├── weeks_in_period_counter.rb
+│   │   ├── years_from_student_fetcher.rb
+│   │   └── years_from_unity_fetcher.rb
+│   ├── uploaders
+│   │   ├── asset_uploader.rb
+│   │   ├── backup_file_uploader.rb
+│   │   ├── doc_uploader.rb
+│   │   ├── entity_logo_uploader.rb
+│   │   ├── report_uploader.rb
+│   │   └── user_profile_picture_uploader.rb
+│   ├── validators
+│   │   ├── date_validator.rb
+│   │   ├── email_validator.rb
+│   │   ├── not_in_future_validator.rb
+│   │   ├── posting_date_validator.rb
+│   │   ├── school_calendar_day_validator.rb
+│   │   └── school_term_day_validator.rb
+│   ├── views
+│   │   ├── absence_justification_report
+│   │   ├── absence_justifications
+│   │   ├── accounts
+│   │   ├── address
+│   │   ├── admin_synchronizations
+│   │   ├── api
+│   │   ├── application
+│   │   ├── attendance_record_report
+│   │   ├── attendance_record_report_by_students
+│   │   ├── avaliation_exemptions
+│   │   ├── avaliation_recovery_diary_records
+│   │   ├── avaliation_recovery_lowest_notes
+│   │   ├── avaliations
+│   │   ├── classrooms
+│   │   ├── complementary_exams
+│   │   ├── complementary_exam_settings
+│   │   ├── conceptual_exams
+│   │   ├── conceptual_exams_in_batchs
+│   │   ├── courses
+│   │   ├── custom_rounding_tables
+│   │   ├── daily_frequencies
+│   │   ├── daily_frequencies_in_batchs
+│   │   ├── daily_notes
+│   │   ├── dashboard
+│   │   ├── data_exportations
+│   │   ├── descriptive_exams
+│   │   ├── devise
+│   │   ├── discipline_content_records
+│   │   ├── discipline_lesson_plan_report
+│   │   ├── discipline_lesson_plans
+│   │   ├── disciplines
+│   │   ├── discipline_teaching_plans
+│   │   ├── entity_configurations
+│   │   ├── exam_record_report
+│   │   ├── final_recovery_diary_records
+│   │   ├── general_configurations
+│   │   ├── grades
+│   │   ├── history
+│   │   ├── ieducar_api_configurations
+│   │   ├── ieducar_api_exam_postings
+│   │   ├── infrequency_trackings
+│   │   ├── kaminari
+│   │   ├── knowledge_area_content_records
+│   │   ├── knowledge_area_lesson_plan_report
+│   │   ├── knowledge_area_lesson_plans
+│   │   ├── knowledge_areas
+│   │   ├── knowledge_area_teaching_plans
+│   │   ├── layouts
+│   │   ├── learning_objectives_and_skills
+│   │   ├── lectures
+│   │   ├── lesson_plans
+│   │   ├── lessons_boards
+│   │   ├── maintenance_adjustments
+│   │   ├── observation_diary_records
+│   │   ├── observation_record_report
+│   │   ├── pages
+│   │   ├── partial_score_record_report
+│   │   ├── pedagogical_trackings
+│   │   ├── profiles
+│   │   ├── receipt_mailer
+│   │   ├── registrations
+│   │   ├── roles
+│   │   ├── school_calendar_event_batches
+│   │   ├── school_calendar_events
+│   │   ├── school_calendars
+│   │   ├── schools
+│   │   ├── school_term_recovery_diary_records
+│   │   ├── shared
+│   │   ├── students
+│   │   ├── teacher_avaliations
+│   │   ├── teacher_report_cards
+│   │   ├── teachers
+│   │   ├── teaching_plans
+│   │   ├── terms_dictionaries
+│   │   ├── test_settings
+│   │   ├── transfer_notes
+│   │   ├── translations
+│   │   ├── unities
+│   │   ├── user_mailer
+│   │   └── users
+│   └── workers
+│       ├── backup_file_worker.rb
+│       ├── concerns
+│       ├── copy_discipline_teaching_plan_worker.rb
+│       ├── copy_knowledge_area_teaching_plan_worker.rb
+│       ├── create_empty_conceptual_exam_value_worker.rb
+│       ├── daily_frequency_creator_worker.rb
+│       ├── delete_dispensed_exams_and_frequencies_worker.rb
+│       ├── delete_invalid_presence_record_worker.rb
+│       ├── fix_daily_frequency_missing_students_worker.rb
+│       ├── generic_worker.rb
+│       ├── ieducar
+│       ├── ieducar_exam_posting_worker.rb
+│       ├── ieducar_synchronizer_worker.rb
+│       ├── infrequency_tracking_notifier_worker.rb
+│       ├── lesson_plan_attachment_copier_worker.rb
+│       ├── maintenance_adjustment_worker.rb
+│       ├── period_updater_worker.rb
+│       ├── remove_closed_years_on_selected_profiles_worker.rb
+│       ├── remove_daily_note_students_worker.rb
+│       ├── school_calendar_event_batch_manager
+│       ├── school_days_counter_worker.rb
+│       ├── school_term_type_updater_worker.rb
+│       ├── student_dependencies_discarders
+│       ├── students_update_uses_differentiated_exam_rule_worker.rb
+│       ├── unique_daily_frequency_students_creator_worker.rb
+│       ├── update_infrequency_tracking_materialized_views_worker.rb
+│       └── user_for_student_creator_worker.rb
+├── babel.config.js
+├── bin
+│   ├── autospec
+│   ├── bundle
+│   ├── bundler
+│   ├── erubis
+│   ├── htmldiff
+│   ├── ldiff
+│   ├── lessc
+│   ├── nokogiri
+│   ├── puma
+│   ├── pumactl
+│   ├── rackup
+│   ├── rails
+│   ├── rake
+│   ├── rdoc
+│   ├── ri
+│   ├── rspec
+│   ├── sdoc
+│   ├── sdoc-merge
+│   ├── setup
+│   ├── spring
+│   ├── sprockets
+│   ├── thor
+│   ├── tilt
+│   ├── tt
+│   ├── update
+│   ├── webpack
+│   └── webpack-dev-server
+├── CODE_OF_CONDUCT.md
+├── config
+│   ├── application.rb
+│   ├── boot.rb
+│   ├── cable.yml
+│   ├── database.sample.yml
+│   ├── database.yml
+│   ├── environment.rb
+│   ├── environments
+│   │   ├── development.rb
+│   │   ├── production.rb
+│   │   ├── staging.rb
+│   │   └── test.rb
+│   ├── initializers
+│   │   ├── active_record_reaper_monkey_patch.rb
+│   │   ├── application_controller_renderer.rb
+│   │   ├── assets.rb
+│   │   ├── audit.rb
+│   │   ├── backtrace_silencers.rb
+│   │   ├── carrierwave.rb
+│   │   ├── cookies_serializer.rb
+│   │   ├── decore.rb
+│   │   ├── devise.rb
+│   │   ├── enumerate_it.rb
+│   │   ├── filter_parameter_logging.rb
+│   │   ├── i18n_alchemy.rb
+│   │   ├── inflections.rb
+│   │   ├── kaminari.rb
+│   │   ├── mime_types.rb
+│   │   ├── new_framework_defaults.rb
+│   │   ├── non_digest_assets.rb
+│   │   ├── redis.rb
+│   │   ├── route_translator.rb
+│   │   ├── session_store.rb
+│   │   ├── setup_mail.rb
+│   │   ├── sidekiq_queues.rb
+│   │   ├── sidekiq_web.rb
+│   │   ├── simple_form_bootstrap.rb
+│   │   ├── simple_form.rb
+│   │   ├── uri.rb
+│   │   ├── validates_timeliness.rb
+│   │   └── wrap_parameters.rb
+│   ├── label_colors.yml
+│   ├── locales
+│   │   ├── active_record.yml
+│   │   ├── address.yml
+│   │   ├── bootstrap.yml
+│   │   ├── controllers
+│   │   ├── devise.yml
+│   │   ├── enumerations
+│   │   ├── en.yml
+│   │   ├── forms
+│   │   ├── ieducar_api_configuration.yml
+│   │   ├── kaminari.yml
+│   │   ├── models
+│   │   ├── navigation.yml
+│   │   ├── pundit.yml
+│   │   ├── rails.yml
+│   │   ├── registrations.yml
+│   │   ├── reports
+│   │   ├── responders.yml
+│   │   ├── routes.yml
+│   │   ├── services
+│   │   ├── simple_form.yml
+│   │   ├── states.yml
+│   │   ├── validates_timeliness.yml
+│   │   ├── views
+│   │   └── workers
+│   ├── navigation.yml
+│   ├── puma.sample.rb
+│   ├── routes.rb
+│   ├── secrets.sample.yml
+│   ├── secrets.yml
+│   ├── sidekiq.yml
+│   ├── spring.rb
+│   ├── synchronization_configs.yml
+│   ├── webpack
+│   │   ├── development.js
+│   │   ├── environment.js
+│   │   ├── loaders
+│   │   ├── production.js
+│   │   ├── staging.js
+│   │   └── test.js
+│   └── webpacker.yml
+├── config.ru
+├── CONTRIBUTING.md
+├── docker-compose.yml
+├── Dockerfile
+├── estrutura_projeto.txt
+├── Gemfile
+├── Gemfile.lock
+├── iniciar_idiario.sh
+├── lib
+│   ├── application_responder.rb
+│   ├── assets
+│   ├── audit.rb
+│   ├── portabilis
+│   │   ├── form_builder.rb
+│   │   ├── inputs
+│   │   └── mask_to_inputs.rb
+│   ├── sidekiq_monitor.rb
+│   ├── tasks
+│   │   ├── clear_reports_folder.rake
+│   │   ├── database.rake
+│   │   ├── delete_frequencies_from_inactive_students.rake
+│   │   ├── entity.rake
+│   │   ├── execute_sql.rake
+│   │   ├── generate_api_token.rake
+│   │   ├── ieducar_api.rake
+│   │   ├── refresh_pedagogical_tracking_dashboard_views.rake
+│   │   ├── send_notifications.rake
+│   │   ├── update_avaliations_school_calendar.rake
+│   │   ├── update_avaliations_test_setting.rake
+│   │   ├── upgrades.rake
+│   │   └── user.rake
+│   └── templates
+│       └── erb
+├── LICENSE
+├── package.json
+├── postcss.config.js
+├── Rakefile
+├── README.md
+├── script
+│   └── start
+├── SECURITY.md
+└── spec
+    ├── acceptance
+    │   ├── absence_justifications.feature
+    │   ├── avaliations.feature
+    │   ├── entity_configurations.feature
+    │   ├── ieducar_api_configurations.feature
+    │   ├── roles.feature
+    │   ├── school_calendar_events.feature
+    │   ├── school_calendars.feature
+    │   ├── sign_in_and_sign_out.feature
+    │   ├── test_settings.feature
+    │   ├── unities.feature
+    │   ├── user_profile.feature
+    │   └── users.feature
+    ├── cassettes
+    │   ├── all_classrooms.yml
+    │   ├── all_deficiencies.yml
+    │   ├── all_disciplines.yml
+    │   ├── all_exam_rules.yml
+    │   ├── all_knowledge_areas.yml
+    │   ├── all_recovery_exam_rules.yml
+    │   ├── all_rouding_tables.yml
+    │   ├── all_students.yml
+    │   ├── all_teachers.yml
+    │   ├── grades.yml
+    │   ├── invalid_access_key.yml
+    │   ├── lectures.yml
+    │   ├── not_found_client_url.yml
+    │   ├── post_absence_resource.yml
+    │   ├── post_absences.yml
+    │   ├── post_descriptive_exams.yml
+    │   ├── post_exams.yml
+    │   ├── post_invalid_access_key.yml
+    │   ├── post_not_found_client_url.yml
+    │   ├── post_wrong_client_url.yml
+    │   ├── post_wrong_resource.yml
+    │   ├── school_calendars.yml
+    │   ├── schools.yml
+    │   ├── signup_parent.yml
+    │   ├── student_registrations.yml
+    │   ├── students_for_daily.yml
+    │   ├── students_in_final_recovery.yml
+    │   ├── unities.yml
+    │   ├── wrong_client_url.yml
+    │   └── wrong_resource.yml
+    ├── controllers
+    │   ├── accounts_controller_spec.rb
+    │   ├── api
+    │   ├── application_controller_spec.rb
+    │   ├── daily_frequencies_controller_spec.rb
+    │   ├── dashboard_controller_spec.rb
+    │   ├── descriptive_exams_controller_spec.rb
+    │   ├── discipline_content_records_controller_spec.rb
+    │   ├── discipline_teaching_plan_controller_spec.rb
+    │   ├── entity_configurations_controller_spec.rb
+    │   ├── general_configurations_controller_spec.rb
+    │   ├── ieducar_api_configurations_controller_spec.rb
+    │   ├── ieducar_api_exam_postings_controller_spec.rb
+    │   ├── knowledge_area_content_records_controller_spec.rb
+    │   ├── knowledge_area_lesson_plans_controller.rb
+    │   ├── lessons_board_controller_spec.rb
+    │   ├── observation_diary_record_controller_spec.rb
+    │   ├── roles_controller_spec.rb
+    │   ├── school_calendar_events_controller_spec.rb
+    │   ├── school_calendars_controller_spec.rb
+    │   ├── students_controller_spec.rb
+    │   ├── unities_controller_spec.rb
+    │   └── users_controller_spec.rb
+    ├── factories
+    │   ├── absence_justifications.rb
+    │   ├── absence_justifications_student.rb
+    │   ├── active_searches.rb
+    │   ├── adresses.rb
+    │   ├── avaliation_exemptions.rb
+    │   ├── avaliation_recovery_diary_records.rb
+    │   ├── avaliation_recovery_lowest_notes.rb
+    │   ├── avaliations.rb
+    │   ├── classrooms_grades.rb
+    │   ├── classrooms.rb
+    │   ├── complementary_exam_settings.rb
+    │   ├── complementary_exams.rb
+    │   ├── complementary_exam_students.rb
+    │   ├── conceptual_exams.rb
+    │   ├── conceptual_exam_values.rb
+    │   ├── content_records.rb
+    │   ├── contents.rb
+    │   ├── courses.rb
+    │   ├── custom_rounding_tables.rb
+    │   ├── custom_rounding_table_values.rb
+    │   ├── daily_frequencies.rb
+    │   ├── daily_frequency_students.rb
+    │   ├── daily_notes.rb
+    │   ├── daily_note_students.rb
+    │   ├── deficiencies.rb
+    │   ├── deficiency_students.rb
+    │   ├── descriptive_exams.rb
+    │   ├── descriptive_exam_students.rb
+    │   ├── discipline_content_records.rb
+    │   ├── discipline_lesson_plans.rb
+    │   ├── disciplines.rb
+    │   ├── discipline_teaching_plans.rb
+    │   ├── entity_configurations.rb
+    │   ├── entity.rb
+    │   ├── exam_rules.rb
+    │   ├── final_recovery_diary_records.rb
+    │   ├── grades.rb
+    │   ├── ieducar_api_configurations.rb
+    │   ├── ieducar_api_exam_postings.rb
+    │   ├── ieducar_api_synchronizations.rb
+    │   ├── knowledge_area_lesson_plan_knowledge_area.rb
+    │   ├── knowledge_area_lesson_plans.rb
+    │   ├── knowledge_areas.rb
+    │   ├── knowledge_area_teaching_plans.rb
+    │   ├── lesson_plans.rb
+    │   ├── lessons_board_lessons.rb
+    │   ├── lessons_board_lesson_weekdays.rb
+    │   ├── lessons_boards.rb
+    │   ├── objectives.rb
+    │   ├── observation_diary_record_notes.rb
+    │   ├── observation_diary_record_note_students.rb
+    │   ├── observation_diary_records.rb
+    │   ├── recovery_diary_records.rb
+    │   ├── recovery_diary_record_students.rb
+    │   ├── role_permissions.rb
+    │   ├── roles.rb
+    │   ├── school_calendar_classrooms.rb
+    │   ├── school_calendar_classroom_steps.rb
+    │   ├── school_calendar_discipline_grades.rb
+    │   ├── school_calendar_events.rb
+    │   ├── school_calendars.rb
+    │   ├── school_calendar_steps.rb
+    │   ├── school_term_recovery_diary_records.rb
+    │   ├── school_term_types.rb
+    │   ├── school_term_type_steps.rb
+    │   ├── specific_steps.rb
+    │   ├── student_enrollment_classrooms.rb
+    │   ├── student_enrollment_dependencies.rb
+    │   ├── student_enrollment_exempted_discipline.rb
+    │   ├── student_enrollments.rb
+    │   ├── students.rb
+    │   ├── teacher_discipline_classrooms.rb
+    │   ├── teachers.rb
+    │   ├── teaching_plans.rb
+    │   ├── test_settings.rb
+    │   ├── test_setting_tests.rb
+    │   ├── transfer_notes.rb
+    │   ├── unique_daily_frequency_students.rb
+    │   ├── unities.rb
+    │   ├── unity_equipments.rb
+    │   ├── user_roles.rb
+    │   ├── users.rb
+    │   ├── worker_batches.rb
+    │   └── worker_states.rb
+    ├── fixtures
+    │   ├── absence_justifications.yml
+    │   ├── addresses.yml
+    │   ├── deficiencies.yml
+    │   ├── entities.yml
+    │   ├── files
+    │   ├── general_configurations.yml
+    │   ├── ieducar_api_configurations.yml
+    │   ├── role_permissions.yml
+    │   ├── roles.yml
+    │   ├── school_calendar_events.yml
+    │   ├── school_calendar_steps.yml
+    │   ├── school_calendars.yml
+    │   ├── students.yml
+    │   ├── test_settings.yml
+    │   ├── test_setting_tests.yml
+    │   ├── unities.yml
+    │   ├── user_roles.yml
+    │   └── users.yml
+    ├── forms
+    │   ├── absence_justification_report_form_spec.rb
+    │   ├── attendance_record_report_by_student_form_spec.rb
+    │   ├── current_role_form_spec.rb
+    │   ├── observation_record_report_form_spec.rb
+    │   └── teacher_report_card_form_spec.rb
+    ├── helpers
+    │   ├── avaliation_helper_spec.rb
+    │   ├── bootstrap_flash_helper_spec.rb
+    │   ├── daily_frequency_helper_spec.rb
+    │   └── daily_note_helper_spec.rb
+    ├── lib
+    │   └── tasks
+    ├── mailers
+    ├── models
+    │   ├── absence_justification_spec.rb
+    │   ├── absence_justifications_student_spec.rb
+    │   ├── active_search_spec.rb
+    │   ├── address_spec.rb
+    │   ├── avaliation_recovery_diary_record_spec.rb
+    │   ├── avaliation_recovery_lowest_note_spec.rb
+    │   ├── avaliation_spec.rb
+    │   ├── classrooms_grade_spec.rb
+    │   ├── complementary_exam_setting_spec.rb
+    │   ├── complementary_exam_spec.rb
+    │   ├── conceptual_exam_spec.rb
+    │   ├── conceptual_exam_value_spec.rb
+    │   ├── content_record_spec.rb
+    │   ├── custom_rounding_table_spec.rb
+    │   ├── custom_rounding_table_value_spec.rb
+    │   ├── daily_frequency_spec.rb
+    │   ├── daily_frequency_student_spec.rb
+    │   ├── daily_note_spec.rb
+    │   ├── daily_note_student_spec.rb
+    │   ├── deficiency_spec.rb
+    │   ├── descriptive_exam_spec.rb
+    │   ├── descriptive_exam_student_spec.rb
+    │   ├── discipline_lesson_plan_spec.rb
+    │   ├── discipline_teaching_plan_spec.rb
+    │   ├── entity_configuration_spec.rb
+    │   ├── entity_spec.rb
+    │   ├── final_recovery_diary_record_spec.rb
+    │   ├── general_configuration_spec.rb
+    │   ├── ieducar_api_configuration_spec.rb
+    │   ├── ieducar_api_exam_posting_spec.rb
+    │   ├── ieducar_api_synchronization_spec.rb
+    │   ├── knowledge_area_lesson_plan_knowledge_area_spec.rb
+    │   ├── knowledge_area_lesson_plan_spec.rb
+    │   ├── knowledge_area_spec.rb
+    │   ├── knowledge_area_teaching_plan_knowledge_area_spec.rb
+    │   ├── knowledge_area_teaching_plan_spec.rb
+    │   ├── lesson_plan_spec.rb
+    │   ├── lessons_board_lesson_spec.rb
+    │   ├── lessons_board_lesson_weekday_spec.rb
+    │   ├── lessons_board_spec.rb
+    │   ├── observation_diary_record_note_spec.rb
+    │   ├── observation_diary_record_note_student_spec.rb
+    │   ├── observation_diary_record_spec.rb
+    │   ├── profile_spec.rb
+    │   ├── recovery_diary_record_spec.rb
+    │   ├── recovery_diary_record_student_spec.rb
+    │   ├── role_permission_spec.rb
+    │   ├── role_spec.rb
+    │   ├── school_calendar_classroom_spec.rb
+    │   ├── school_calendar_classroom_step_spec.rb
+    │   ├── school_calendar_event_spec.rb
+    │   ├── school_calendar_spec.rb
+    │   ├── school_calendar_step_spec.rb
+    │   ├── school_term_recovery_diary_record_spec.rb
+    │   ├── signup_spec.rb
+    │   ├── student_spec.rb
+    │   ├── system_notification_spec.rb
+    │   ├── system_notification_target_spec.rb
+    │   ├── teacher_spec.rb
+    │   ├── teaching_plan_spec.rb
+    │   ├── test_setting_spec.rb
+    │   ├── test_setting_test_spec.rb
+    │   ├── transfer_note_spec.rb
+    │   ├── unity_equipment.rb
+    │   ├── unity_spec.rb
+    │   ├── user_login_spec.rb
+    │   ├── user_role_spec.rb
+    │   └── user_spec.rb
+    ├── policies
+    ├── queries
+    │   ├── observation_record_report_query_spec.rb
+    │   ├── school_calendar_classroom_query_spec.rb
+    │   └── school_calendar_query_spec.rb
+    ├── rails_helper.rb
+    ├── reports
+    │   ├── absence_justification_report_spec.rb
+    │   ├── attendance_record_report_spec.rb
+    │   ├── discipline_lesson_plan_pdf_spec.rb
+    │   ├── discipline_lesson_plan_report_spec.rb
+    │   ├── exam_record_report_spec.rb
+    │   ├── knowledge_area_lesson_plan_pdf_spec.rb
+    │   ├── knowledge_area_lesson_plan_report_spec.rb
+    │   └── observation_record_report_spec.rb
+    ├── services
+    │   ├── absence_adjustments_service_spec.rb
+    │   ├── absence_count_service_spec.rb
+    │   ├── absence_justified_on_date_spec.rb
+    │   ├── active_students_on_date_spec.rb
+    │   ├── api
+    │   ├── check_type_frequency_is_by_discipline_spec.rb
+    │   ├── complementary_exam_calculator_spec.rb
+    │   ├── complementary_exam_settings_fetcher_spec.rb
+    │   ├── conceptual_exam_value_creator_spec.rb
+    │   ├── contents_for_discipline_record_fetcher_spec.rb
+    │   ├── copy_discipline_teaching_plan_service_spec.rb
+    │   ├── create_absence_justifications_service_spec.rb
+    │   ├── current_school_calendar_fetcher_spec.rb
+    │   ├── current_school_year_fetcher_spec.rb
+    │   ├── daily_frequencies_creator_spec.rb
+    │   ├── delete_dispensed_exams_and_frequencies_service_spec.rb
+    │   ├── delete_invalid_presence_record_service_spec.rb
+    │   ├── entity_creator_spec.rb
+    │   ├── entity_database_creator_spec.rb
+    │   ├── exam_poster
+    │   ├── exam_rule_fetcher_spec.rb
+    │   ├── exempted_disciplines_in_step_spec.rb
+    │   ├── ieducar_api
+    │   ├── ieducar_synchronizers
+    │   ├── list_grades_by_step_builder_spec.rb
+    │   ├── navigation
+    │   ├── navigation_spec.rb
+    │   ├── old_steps_conceptual_values_fetcher_spec.rb
+    │   ├── posting_date_checker_spec.rb
+    │   ├── remove_daily_note_students_spec.rb
+    │   ├── school_calendar_event_days_spec.rb
+    │   ├── school_day_checker_spec.rb
+    │   ├── school_term_average_calculator_spec.rb
+    │   ├── score_rounder_spec.rb
+    │   ├── steps_fetcher_spec.rb
+    │   ├── student_average_calculation_spec.rb
+    │   ├── student_enrollment_classroom_fetcher_spec.rb
+    │   ├── student_enrollment_classrooms_retriever_spec.rb
+    │   ├── student_enrollment_lists_spec.rb
+    │   ├── student_enrollments_retriever_spec.rb
+    │   ├── students_exempt_from_discipline_spec.rb
+    │   ├── students_in_dependency_spec.rb
+    │   ├── students_in_recovery_fetcher_spec.rb
+    │   ├── teacher_classroom_and_discipline_fetcher_spec.rb
+    │   ├── teacher_relation_fetcher_spec.rb
+    │   ├── test_setting_fetcher_spec.rb
+    │   ├── unique_daily_frequency_students_creator_spec.rb
+    │   ├── weeks_in_period_counter_spec.rb
+    │   └── years_from_unity_fetcher_spec.rb
+    ├── spec_helper_form.rb
+    ├── spec_helper_lite.rb
+    ├── spec_helper.rb
+    ├── support
+    │   ├── assets
+    │   ├── capybara.rb
+    │   ├── context.rb
+    │   ├── controller_helpers.rb
+    │   ├── database_cleaner.rb
+    │   ├── decorator_example_group.rb
+    │   ├── devise.rb
+    │   ├── factory_girl.rb
+    │   ├── fixture_load.rb
+    │   ├── helpers.rb
+    │   ├── matchers
+    │   ├── select2_matchers.rb
+    │   ├── shoulda_matchers_helper.rb
+    │   ├── turnip
+    │   └── vcr.rb
+    └── views
+
+182 directories, 1032 files

@@ -1,0 +1,22 @@
+pt-BR:
+  activerecord:
+    models:
+      school_calendar:
+        one: "Calendário letivo"
+        other: "Calendários letivos"
+
+    attributes:
+      school_calendar:
+        unity_id: "Escola"
+        unity: "Escola"
+        year: "Ano"
+        number_of_classes: "Número de aulas por turno"
+        school_calendar_steps: "a"
+
+
+    errors:
+      models:
+        school_calendar:
+          attributes:
+            steps:
+              at_least_one_step: "É necessário adicionar pelo menos uma etapa"
